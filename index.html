@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petrol Pump Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Petrol Pump Dashboard</h1>
+      <p>Monitor sales, stock, staff, and daily operations</p>
+    </header>
+
+    <main class="layout">
+      <aside class="card admin-sidebar">
+        <h2>Admin Panel</h2>
+        <p class="subtitle">Admin Have</p>
+        <nav>
+          <ul class="admin-menu">
+            <li>Dynamic Dashboard</li>
+            <li>Fuel Orders</li>
+            <li>Add or Manage Pumps</li>
+            <li>Assign Duty</li>
+            <li>Savings</li>
+            <li>Sales Reports</li>
+            <li>Add Staff</li>
+            <li>Manage Payroll</li>
+            <li>Suppliers</li>
+            <li>Creditors</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="container">
+        <section class="card metrics">
+          <h2>Today at a Glance</h2>
+          <div class="metric-grid">
+            <article>
+              <h3>Total Sales</h3>
+              <p class="value">₹2,48,300</p>
+            </article>
+            <article>
+              <h3>Fuel Dispensed</h3>
+              <p class="value">4,982 L</p>
+            </article>
+            <article>
+              <h3>Transactions</h3>
+              <p class="value">486</p>
+            </article>
+            <article>
+              <h3>Pending Credit</h3>
+              <p class="value">₹31,200</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card admin-overview">
+          <h2>Dynamic Dashboard</h2>
+          <div class="metric-grid admin-grid">
+            <article>
+              <h3>Fuel Orders Today</h3>
+              <p class="value">12</p>
+            </article>
+            <article>
+              <h3>Staff on Duty</h3>
+              <p class="value">18</p>
+            </article>
+            <article>
+              <h3>Payroll Due</h3>
+              <p class="value">₹1,82,000</p>
+            </article>
+            <article>
+              <h3>Monthly Savings</h3>
+              <p class="value">₹74,500</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Fuel Inventory</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Fuel Type</th>
+                <th>Tank Capacity</th>
+                <th>Available</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Petrol</td>
+                <td>20,000 L</td>
+                <td>9,320 L</td>
+                <td><span class="badge normal">Normal</span></td>
+              </tr>
+              <tr>
+                <td>Diesel</td>
+                <td>25,000 L</td>
+                <td>5,180 L</td>
+                <td><span class="badge warning">Refill Soon</span></td>
+              </tr>
+              <tr>
+                <td>Premium Petrol</td>
+                <td>8,000 L</td>
+                <td>2,980 L</td>
+                <td><span class="badge normal">Normal</span></td>
+              </tr>
+              <tr>
+                <td>CNG</td>
+                <td>6,000 kg</td>
+                <td>1,020 kg</td>
+                <td><span class="badge critical">Low</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card form-card">
+          <h2>Quick Entry</h2>
+          <form>
+            <label>
+              Pump No.
+              <input type="text" placeholder="Enter pump number" />
+            </label>
+            <label>
+              Fuel Type
+              <select>
+                <option>Petrol</option>
+                <option>Diesel</option>
+                <option>Premium Petrol</option>
+                <option>CNG</option>
+              </select>
+            </label>
+            <label>
+              Quantity
+              <input type="number" placeholder="Liters / Kg" />
+            </label>
+            <label>
+              Amount
+              <input type="number" placeholder="INR" />
+            </label>
+            <button type="button">Save Entry</button>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
